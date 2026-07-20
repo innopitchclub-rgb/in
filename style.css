@@ -198,7 +198,7 @@ h1, h2, h3 {
 }
 
 p { margin: 0; color: var(--slate); }
-img, svg { display: block; max-width: 100%; }
+img, svg { display: block; max-width: 100%; height: auto; }
 
 :focus-visible {
   outline: 2px solid var(--amber);
@@ -1414,6 +1414,7 @@ main { animation: page-fade-in 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
 .section-visual img {
   width: 100%;
   height: clamp(200px, 28vw, 340px);
+  min-height: 180px;
   object-fit: cover;
   display: block;
   transform: scale(1.02);
@@ -1686,7 +1687,7 @@ main { animation: page-fade-in 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
   }
 }
 @media (max-width: 640px) {
-  .section-visual img { height: 220px; }
+  .section-visual img { height: auto; }
   .hero { padding-top: 2.1rem; }
   .hero h1 { font-size: clamp(2.1rem, 8.4vw, 2.9rem); }
   .hero-actions { gap: 0.7rem; }
