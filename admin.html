@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Dashboard — InnoPitch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="admin-root">
+    <section id="loginCard" class="admin-login">
+      <h2>Admin Login</h2>
+      <p class="admin-login-note">Only admins may view the registration data. Please log in to access the dashboard.</p>
+      <form id="loginForm">
+        <div class="password-toggle-wrapper">
+          <input id="adminPassword" type="password" placeholder="Enter admin password" required />
+          <button type="button" id="togglePassword" class="password-toggle" aria-label="Show password">Show</button>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <p id="loginStatus" class="form-status" role="status"></p>
+    </section>
+
+    <section id="adminDashboard" class="admin-dashboard" hidden>
+      <header class="admin-header">
+        <div>
+          <h1>Registrations Dashboard</h1>
+          <p>Use the admin password to manage applications. Data is stored locally in this browser.</p>
+        </div>
+        <button id="logoutBtn" class="btn btn-ghost">Logout</button>
+      </header>
+
+      <div class="table-wrap">
+        <table id="registrationsTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Department</th>
+              <th>Year</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="registrationsBody">
+            <tr><td colspan="7">Loading registrations...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Members — InnoPitch & Greenovation Mavericks Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="spotlight" aria-hidden="true"></div>
+<div class="starfield" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="brand">Inno<span>Pitch</span> &amp; <span class="brand-accent">Greenovation</span> Mavericks Club</a>
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html#about">About</a>
+    <a href="index.html#leaders">Leaders</a>
+    <a href="index.html#teams">Teams</a>
+    <a href="members.html" class="active">Members</a>
+    <a href="index.html#events">Events</a>
+    <a href="index.html#apply" class="nav-cta">Apply</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <div class="hero-particle-layer" aria-hidden="true"></div>
+
+  <!-- PAGE HEADER -->
+  <section class="members-hero">
+    <p class="eyebrow">The full roster</p>
+    <h1>Every member, one page.</h1>
+    <p class="section-sub">From the leadership team to every builder on the floor. Filter by team to find someone, or just browse who's around.</p>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="members-controls">
+    <div class="filter-row" id="filterRow">
+      <button class="filter-pill active" data-filter="all">All members</button>
+      <button class="filter-pill" data-filter="leadership">Leadership</button>
+      <button class="filter-pill" data-filter="campuscompost">CampusCompost</button>
+      <button class="filter-pill" data-filter="notesync">NoteSync</button>
+      <button class="filter-pill" data-filter="wattwise">Wattwise</button>
+      <button class="filter-pill" data-filter="carpoolu">Carpool U</button>
+    </div>
+  </section>
+
+  <!-- MEMBER GRID -->
+  <section class="members-grid-section">
+    <div class="member-grid" id="memberGrid">
+
+      <!-- Leadership -->
+      <article class="member-card" data-team="leadership">
+        <div class="member-avatar">S</div>
+        <h3>Santhosh</h3>
+        <span class="member-role">President</span>
+        <p class="member-meta">3rd Year · 2024–2028</p>
+        <span class="member-tag">Leadership</span>
+      </article>
+
+      <article class="member-card" data-team="leadership">
+        <div class="member-avatar">SP</div>
+        <h3>Sri Prasad</h3>
+        <span class="member-role">Vice President</span>
+        <p class="member-meta">3rd Year · 2024–2028</p>
+        <span class="member-tag">Leadership</span>
+      </article>
+
+      <article class="member-card" data-team="leadership">
+        <div class="member-avatar">N</div>
+        <h3>Nithin</h3>
+        <span class="member-role">Secretary</span>
+        <p class="member-meta">3rd Year · 2024–2028</p>
+        <span class="member-tag">Leadership</span>
+      </article>
+
+      <article class="member-card" data-team="leadership">
+        <div class="member-avatar">HP</div>
+        <h3>Hema Priyan</h3>
+        <span class="member-role">Treasurer</span>
+        <p class="member-meta">3rd Year · 2024–2028</p>
+        <span class="member-tag">Leadership</span>
+      </article>
+
+      <article class="member-card" data-team="leadership">
+        <div class="member-avatar">DD</div>
+        <h3>Dharshini Devi P</h3>
+        <span class="member-role">Coordinator</span>
+        <p class="member-meta">2nd Year · 2025–2029</p>
+        <span class="member-tag">Leadership</span>
+      </article>
+
+      <article class="member-card" data-team="leadership">
+        <div class="member-avatar">MK</div>
+        <h3>Karthick M</h3>
+        <span class="member-role">Assistant Coordinator</span>
+        <p class="member-meta">2nd Year · 2025–2029</p>
+        <span class="member-tag">Leadership</span>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="eyebrow">Contact</p>
+    <h2>Reach the club directly</h2>
+    <p class="section-sub">For questions, collaborations, or membership queries, send us an email and we’ll get back to you soon.</p>
+    <a href="mailto:innopitchclub@gmail.com" class="btn btn-primary">Email innopitchclub@gmail.com</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand">Inno<span>Pitch</span> &amp; <span class="brand-accent">Greenovation</span> Mavericks Club</a>
+      <p class="footer-tag">Build your career. Shape your ideas. Pitch your future.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Say hello</h4>
+      <p><a href="mailto:innopitch@gmail.com">innopitch@gmail.com</a></p>
+
+    </div>
+  </div>
+  <p class="footer-fine">© <span id="footerYear"></span> InnoPitch &amp; Greenovation Mavericks Club. Student-run, since day one.</p>
+</footer>
+
+<script src="script-1.js"></script>
+<script>
+  // Filter pills for the members page — scoped here since it's the
+  // only page that needs it.
+  const filterRow = document.getElementById('filterRow');
+  const memberCards = document.querySelectorAll('.member-card');
+  const memberEmpty = document.getElementById('memberEmpty');
+
+  filterRow.addEventListener('click', (event) => {
+    const btn = event.target.closest('.filter-pill');
+    if (!btn) return;
+
+    filterRow.querySelectorAll('.filter-pill').forEach((p) => p.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+    let visibleCount = 0;
+
+    memberCards.forEach((card) => {
+      const match = filter === 'all' || card.dataset.team === filter;
+      card.style.display = match ? '' : 'none';
+      if (match) visibleCount++;
+    });
+
+    memberEmpty.hidden = visibleCount !== 0;
+  });
+</script>
+</body>
+</html>
